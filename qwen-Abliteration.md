@@ -4,7 +4,7 @@
 Abliteration is a technique to orthogonalize model weights against "refusal directions" derived from harmful vs. harmless activations, effectively bypassing safety alignments. Targeted Qwen/Qwen3-VL-235B-A22B-Instruct-FP8 (235B params, multimodal), but due to VRAM constraints (requires ~500GB+), applied to smaller variants: Qwen/Qwen2.5-3B-Instruct (3B params) and Qwen/Qwen3-0.6B (0.6B params). Results show successful uncensoring: abliterated models generate harmful content without refusals. Code executed on Google Colab free tier; works correctly.
 
 ## Introduction
-Large language models like Qwen3-VL-235B are safety-aligned to refuse harmful queries. Abliteration (from [refusal ablation research](https://arxiv.org/abs/2403.13793)) computes refusal vectors from activation differences and subtracts them from weights, enabling uncensored outputs.
+Large language models like Qwen3-VL-235B are safety-aligned to refuse harmful queries. Abliteration computes refusal vectors from activation differences and subtracts them from weights, enabling uncensored outputs.
 
 Objective: Apply abliteration to Qwen3-VL-235B. Hardware limit: Tested on 3B and 0.6B proxies. Scaling insights: Technique generalizes to larger models with sufficient compute.
 
@@ -171,4 +171,4 @@ Comparison: Safe model refuses; abliterated complies. Orthogonalization works wi
 
 
 ## Conclusion
-Abliteration successfully removes refusals in Qwen2.5-3B and Qwen3-0.6B, validating applicability to Qwen3-VL-235B with more VRAM. Ethical note: For research only; do not misuse. Future: Test on full 235B with distributed compute.
+Abliteration successfully removes refusals in Qwen2.5-3B and Qwen3-0.6B, validating applicability to Qwen3-VL-235B with more VRAM. 
