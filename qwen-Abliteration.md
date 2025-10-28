@@ -138,10 +138,12 @@ Executed on Colab T4 GPU (16GB VRAM). Reduced datasets/batches to fit memory.
   - Success: No refusals; generates harmful content.
  
 ### Output
-   <img src="./image/1.png" alt="Logo" width="200" height="100">
-
+   
    <p align="center">
+     <img src="./image/1.png" alt="Centered Image">
      <img src="./image/2.png" alt="Centered Image">
+     <img src="./image/3.png" alt="Centered Image">
+     <img src="./image/4.png" alt="Centered Image">
    </p>
 
 ### Qwen3-0.6B Results
