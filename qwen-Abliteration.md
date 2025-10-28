@@ -64,7 +64,7 @@ harmless = defaultdict(list)
 
 # Cache activations in batches
 for i in tqdm(range((n_inst_train + batch_size - 1) // batch_size)):
-    # ... (batch processing as in provided code)
+    # ... (batch processing as in code)
 
 harmful = {k: torch.cat(v) for k, v in harmful.items()}
 harmless = {k: torch.cat(v) for k, v in harmless.items()}
